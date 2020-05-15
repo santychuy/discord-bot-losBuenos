@@ -20,6 +20,6 @@
 
 ## Licencias
 
-> Puedes ver la licencia [aquí](https://github.com/santychuy).
+> Puedes ver la licencia [aquí](https://github.com/santychuy/discord-bot-losBuenos/blob/master/LICENSE).
 
 Este proyecto tiene licencia bajo los términos de la licencia **MIT**.
