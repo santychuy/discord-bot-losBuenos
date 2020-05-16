@@ -32,6 +32,8 @@ client.on('message', async message => {
     await message.channel.send(randomElement(warzone));
   } else if (cmd.includes('chilo') || cmd.includes('chelo')) {
     await message.channel.send('Chilo we');
+  } else if (cmd.includes('cuantos')) {
+    await message.channel.send('Saqué 36 botes con 1 dardo, chhhhelo we');
   } else {
     await message.channel.send('Pon el comando bien, puñetas');
   }
