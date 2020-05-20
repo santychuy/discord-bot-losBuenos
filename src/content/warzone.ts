@@ -1,4 +1,4 @@
-export default [
+const placesWarzone: string[] = [
   'Vamonos a Junkyard',
   'A Stadium en chinga',
   'Fuga al Hospital',
@@ -15,3 +15,5 @@ export default [
   'Fuga al Ikea, (Superstore), pinche indio jodido',
   'Amonos a AburriLandia',
 ];
+
+export default placesWarzone;

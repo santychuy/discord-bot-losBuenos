@@ -5,22 +5,12 @@ import { getFirstCmd } from './util/commands';
 import warzone from './content/warzone';
 import { randomElement } from './util/randomElement';
 
-const {
-  APP_SETTINGS: { DISCORD_TOKEN, PREFIX },
-} = config;
+const { DISCORD_TOKEN, PREFIX } = config;
 
 const client = new Client();
 
 client.once('ready', () => {
   console.log('Listo viejon');
-});
-
-client.once('guildMemberAdd', ({ guild, nickname }) => {
-  guild.channels
-    .find(channel => channel.name === 'gentuza')
-    .send(
-      `Esele mi ${nickname}, Bienvenido a los Buenos de Sinaloa, chilo we.`
-    );
 });
 
 // Commandos del Mago
