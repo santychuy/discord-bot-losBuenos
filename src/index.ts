@@ -13,6 +13,10 @@ client.once('ready', () => {
   console.log('Listo viejon');
 });
 
+client.on('guildMemberAdd', async member => {
+  await member.send(`Bienvenido a los meros meros de Culichi, chelo ${member.nickname}`);
+});
+
 // Commandos del Mago
 client.on('message', async message => {
   if (!message.content.startsWith(PREFIX) || message.author.bot) return;
