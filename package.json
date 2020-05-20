@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "dev": "tsc-watch --onSuccess \"cross-env NODE_ENV=development node dist/index.js\"",
-    "start": "tsc && cross-env NODE_ENV=production node dist/index.js",
+    "start": "cross-env NODE_ENV=production node dist/index.js",
     "clean": "rimraf dist"
   },
   "keywords": [],
