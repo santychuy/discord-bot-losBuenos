@@ -2,10 +2,15 @@ import config from '../config';
 
 const { PREFIX } = config;
 
-export const getFirstCmd = (msg: string): string => {
-  return msg
+export const getFirstCmd = (msg: string): string | undefined => {
+  const getFirstCmd = msg
     .slice(PREFIX.length + 1)
     .split(' ')
-    .shift()!
-    .toLowerCase();
+    .shift();
+
+  if (getFirstCmd !== undefined) {
+    return getFirstCmd.toLowerCase();
+  } else {
+    return undefined;
+  }
 };
